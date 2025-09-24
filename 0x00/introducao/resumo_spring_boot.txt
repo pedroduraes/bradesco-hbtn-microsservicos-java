@@ -1,0 +1,23 @@
+O Spring Boot é uma extensão do framework Spring que visa simplificar e acelerar drasticamente o desenvolvimento e a implantação de aplicações. 
+Ele adota uma abordagem para simplificar a configuração, automatizando o setup e permitindo a criação de aplicações Spring "standalone" e "production-ready" com mínimo esforço.
+
+Principais Benefícios e Recursos:
+
+   Auto-configuração: Detecta bibliotecas no classpath e configura automaticamente os beans necessários, reduzindo a configuração manual.
+   Servidores Embarcados: Permite empacotar servidores web (Tomcat, Jetty, Undertow) diretamente no JAR executável, eliminando a necessidade de um servidor de aplicação externo.
+   "Starters": Conjuntos de descritores de dependências que agrupam bibliotecas comuns para um recurso específico (ex: `spring-boot-starter-web`), simplificando o gerenciamento e garantindo compatibilidade.
+   Actuator: Fornece recursos para monitoramento e gerenciamento da aplicação em produção através de endpoints HTTP (saúde, métricas, etc.).
+   Configuração Externa Simplificada: Permite externalizar configurações (via `application.properties`/`yml`, variáveis de ambiente) para adaptar a aplicação a diferentes ambientes sem recompilação.
+   Criação de Aplicações Standalone: As aplicações são empacotadas como JARs executáveis que podem ser rodados diretamente.
+   Menor Tempo de Desenvolvimento: Reduz o tempo de configuração e setup, permitindo focar na lógica de negócios.
+
+Adição de Dependências:
+É feita principalmente através dos Spring Boot Starters. Ao invés de adicionar bibliotecas individuais, 
+adiciona-se um único starter (ex: `spring-boot-starter-data-jpa` para JPA e Hibernate), que puxa todas as dependências relacionadas e as configura automaticamente.
+
+Melhor IDE:
+Eclipse, por eu ter maior facilidade de configuração/uso, além de já vir o maven instalado.
+
+Spring Initializr:
+É uma ferramenta web-based ([start.spring.io](https://start.spring.io/)) que facilita a criação rápida de novos projetos Spring Boot. 
+Permite selecionar o tipo de projeto, linguagem, versão do Spring Boot e as dependências (starters) desejadas, gerando um projeto inicial pronto para ser importado em uma IDE.
