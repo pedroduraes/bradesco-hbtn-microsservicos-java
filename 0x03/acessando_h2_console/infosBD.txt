@@ -1,2 +1,3 @@
-Adding Database Drivers
-Additional database drivers can be registered by adding the Jar file location of the driver to the environment variables H2DRIVERS or CLASSPATH. Example (Windows): to add the database driver library C:/Programs/hsqldb/lib/hsqldb.jar, set the environment variable H2DRIVERS to C:/Programs/hsqldb/lib/hsqldb.jar.
+1. Xxxxxx
+2. Xxxxxx
+3. Xxxxxxx
