@@ -2,6 +2,8 @@ package com.example.jpa_h2_demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity(name = "Telefone")
 public class Telefone {
@@ -10,6 +12,10 @@ public class Telefone {
 	private int id;
 	private int ddd;
 	private long numero;
+	
+	@ManyToOne
+	@JoinColumn(name = "cliente_id")
+	private Cliente cliente;
 
 	public int getId() {
 		return id;
