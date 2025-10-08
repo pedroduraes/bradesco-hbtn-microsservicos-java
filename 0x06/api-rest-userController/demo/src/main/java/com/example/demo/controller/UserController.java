@@ -18,7 +18,7 @@ public class UserController {
 //findUserById - Retornar a mensagem “You have entered valid ID” se o ID informado for maior que 0 e menor que 100. Caso contrário exibir a mensagem ‘You have entered invalid ID’.
 
 		String msg = "You have entered valid ID";
-		if (id < 0 || id > 100) {
+		if (id <= 0 || id > 100) {
 			throw new UserIdException(String.valueOf(id));
 		}
 		return msg;
@@ -49,7 +49,7 @@ public class UserController {
 	}
 
 	public boolean isCPF(String CPF) {
-		return CPF != null && (CPF.length() >= 3 || CPF.length() >= 15);
+		return (CPF.length() >= 3 && CPF.length() <= 15);
 	}
 
 }
